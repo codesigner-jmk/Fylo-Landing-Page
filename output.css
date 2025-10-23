@@ -246,6 +246,9 @@
   .ml-6 {
     margin-left: calc(var(--spacing) * 6);
   }
+  .ml-\[2vw\] {
+    margin-left: 2vw;
+  }
   .ml-\[6vw\] {
     margin-left: 6vw;
   }
@@ -499,6 +502,9 @@
   }
   .bg-contain {
     background-size: contain;
+  }
+  .bg-position-\[center_top_2vh\] {
+    background-position: center top 2vh;
   }
   .bg-position-\[center_top_27vh\] {
     background-position: center top 27vh;
