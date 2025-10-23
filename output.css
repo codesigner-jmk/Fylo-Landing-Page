@@ -278,6 +278,12 @@
   .w-\[3\.5vw\] {
     width: 3.5vw;
   }
+  .w-\[5\.5vw\] {
+    width: 5.5vw;
+  }
+  .w-\[5vw\] {
+    width: 5vw;
+  }
   .w-\[6vw\] {
     width: 6vw;
   }
@@ -290,6 +296,12 @@
   .w-\[48vw\] {
     width: 48vw;
   }
+  .w-\[55\.5vw\] {
+    width: 55.5vw;
+  }
+  .w-\[55vw\] {
+    width: 55vw;
+  }
   .w-\[73\.6vw\] {
     width: 73.6vw;
   }
@@ -298,6 +310,9 @@
   }
   .w-\[100\%\] {
     width: 100%;
+  }
+  .w-\[vw\] {
+    width: vw;
   }
   .w-full {
     width: 100%;
@@ -429,6 +444,12 @@
   .bg-\[url\(images\/bg-curvy-mobile\.svg\)\] {
     background-image: url(images/bg-curvy-mobile.svg);
   }
+  .bg-\[url\(images\/bg-mobile-curve\.svg\)\] {
+    background-image: url(images/bg-mobile-curve.svg);
+  }
+  .bg-\[url\(images\/bg-mobile\.svg\)\] {
+    background-image: url(images/bg-mobile.svg);
+  }
   .from-\[\#65e2d9\] {
     --tw-gradient-from: #65e2d9;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -457,11 +478,17 @@
   .bg-position-\[center_top_27vh\] {
     background-position: center top 27vh;
   }
+  .bg-position-\[center_top_28vh\] {
+    background-position: center top 28vh;
+  }
   .bg-position-\[center_top_29vh\] {
     background-position: center top 29vh;
   }
   .bg-position-\[center_top_30vh\] {
     background-position: center top 30vh;
+  }
+  .bg-position-\[center_top_vh\] {
+    background-position: center top vh;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
