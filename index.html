@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo-icon.png">
   
   <title>Fylo landing page with dark theme and features grid</title>
 
@@ -12,122 +12,141 @@
   <link rel="stylesheet" href="output.css">
 
 </head>
-
-<body class="font-[Open_Sans] bg-[#181f2a] text-white text-[3.73vw] box-border">
-  <header class="bg-[#1c2431] px-[6vw] py-[3vh]">
+<!--bg-[url(images/bg-mobile-curve.svg)] xl:bg-[url(images/bg-curvy-desktop.svg)] bg-contain bg-no-repeat bg-position-[center_top_29vh] xl:bg-bottom-->
+<body class="font-[Open_Sans] bg-gradient-to-b from-[#1c2431] from-14% to-[#181f2a] to-14%  xl:bg-gradient-to-b xl:from-[#1c2431] xl:from-34% xl:to-[#181f2a] xl:to-34% text-[#ffffffd7] text-[3.73vw] lg:text-[2.7vw] xl:text-[1vw] box-border">
+<div class="wrapper bg-[url(images/bg-mobile-curve.svg)] bg-position-[center_top_34vh] xl:bg-[url(images/bg-curvy-desktop.svg)] bg-contain bg-no-repeat xl:bg-position-[center_top_50vh] ">  
+<div class="content"> 
+  <header class=" px-[6vw] lg:px-[8vw] xl:px-[10vw] py-[3vh] lg:py-[4vh] xl:py-[5vh]">
     <nav class="flex justify-between items-center">
       <div class="logo">
-        <img class="w-[21.3vw]" src="images/logo.svg" alt="Fylo logo">
+        <img class="w-[21.3vw] xl:w-[10vw]" src="images/logo.svg" alt="Fylo logo">
       </div>
 
-      <ul class="nav-links flex gap-[6.4vw] font-[Raleway] font-normal">
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Sign In</a></li>
+      <ul class="nav-links flex gap-[6.4vw] xl:gap-[4vw] font-[Raleway] font-normal">
+        <li class="transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 hover:underline hover:text-white hover:text-bold"><a href="#" >Features</a></li>
+        <li class="transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 hover:underline hover:text-white hover:text-bold"><a href="#">Team</a></li>
+        <li class="transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 hover:underline hover:text-white hover:text-bold"><a href="#">Sign In</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero  bg-[#1c2431] bg-[url(images/bg-mobile-curve.svg)] bg-contain bg-no-repeat bg-position-[center_top_29vh] flex flex-col items-center pt-[6vh]">
+    <section class="hero flex flex-col items-center pt-[6vh] lg:pt-[3vh] xl:pt-0">
       <div class="hero-image">
-        <img class="w-[80.8vw]" src="images/illustration-intro.png" alt="Illustration intro">
+        <img class="w-[80.8vw] lg:w-[57vw] xl:w-[35vw]" src="images/illustration-intro.png" alt="Illustration intro">
       </div>
 
-      <div class="hero-text px-6 mt-[4vh] bg-gradient-to-b from-transparent from-40% to-[#181f2a] to-30% flex flex-col items-center">
-        <h1 class="font-[Raleway] font-bold text-[6.7vw] text-center">All your files in one secure location, accessible anywhere.</h1>
-        <p class="pt-[2vh] px-[4.6vw] text-center">Fylo stores all your most important files in one secure location.
+      <div class="hero-text px-6 lg:px-12 xl:px-0  mt-[4vh] xl:mt-[2vh] flex flex-col items-center lg:gap-[3vh] xl:gap-[2vh]">
+        <h1 class="font-[Raleway] font-bold text-[6.7vw] lg:text-[4vw] xl:text-[2vw] text-center lg:px-[10vw] xl:px-[27vw]">All your files in one secure location, accessible anywhere.</h1>
+        <p class="pt-[2vh] xl:pt-0 px-[4.6vw] xl:px-[32vw] text-center">Fylo stores all your most important files in one secure location.
           Access them wherever you need, share and collaborate with friends 
           family, and co-workers.
         </p>
-        <button class="mt-[3vh] font-[Raleway] font-medium bg-linear-to-r from-[#65e2d9] to-[#339ecc] py-[1.4vh] px-[21vw] rounded-full">Get Started</button>
+        <button class="mt-[3vh] xl:mt-0 cursor-pointer font-[Raleway] font-medium bg-linear-to-r from-[#65e2d9] to-[#339ecc] hover:to-[#65e2d9] py-[1.4vh] lg:py-[2vh] xl:py-[1.8vh] px-[21vw] lg:px-[15vw] xl:px-[6.67vw] rounded-full transition delay-120 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 ">Get Started</button>
       </div>
 
     </section>
 
-    <section class="why-us mx-[2.7vw] pt-[12vh] flex flex-col items-center gap-[8vh] px-[6vw] ">
-      <div class="feature flex flex-col items-center">
-        <img src="images/icon-access-anywhere.svg" alt="Access anywhere icon">
-        <h2 class="text-center pt-[2.6vh] text-[4.3vw] font-bold">Access your files, anywhere</h2>
-        <p class="text-center pt-[1vh]">The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+    <section class="why-us mx-[2.7vw] xl:mx-0 pt-[12vh] xl:pt-[10vh] flex flex-col items-center gap-[8vh] xl:gap-[10vh] px-[6vw] lg:px-[8vw] xl:px-0 ">
+      <div class="top xl:flex-row lg:mx-[5vw] xl:mx-[10vw] flex flex-col gap-[10vh] xl:gap-[20vw]">
+        <div class="feature1 flex flex-col items-center xl:flex-1/2">
+          <img src="images/icon-access-anywhere.svg" alt="Access anywhere icon">
+          <h2 class="text-center pt-[2.6vh] text-[4.3vw] lg:text-[3vw] xl:text-[1.2vw] font-bold">Access your files, anywhere</h2>
+          <p class="text-center pt-[1vh]">The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+        </div>
+
+        <div class="feature flex flex-col items-center xl:flex-1/2">
+          <img src="images/icon-security.svg" alt="Security icon">
+          <h2 class="text-center pt-[2.6vh] text-[4.3vw] lg:text-[3vw] xl:text-[1.2vw] font-bold">Security you can trust</h2>
+          <p class="text-center pt-[1vh]">2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+        </div>
       </div>
 
-      <div class="feature flex flex-col items-center">
-        <img src="images/icon-security.svg" alt="Security icon">
-        <h2 class="text-center pt-[2.6vh] text-[4.3vw] font-bold">Security you can trust</h2>
-        <p class="text-center pt-[1vh]">2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
-      </div>
+      <div class="bottom flex flex-col lg:mx-[5vw] gap-[10vh] xl:flex-row xl:mx-[10vw] xl:gap-[20vw]">
+        <div class="feature flex flex-col items-center xl:flex-1/2">
+          <img src="images/icon-collaboration.svg" alt="Collaboration icon">
+          <h2 class="text-center pt-[2.6vh] text-[4.3vw] lg:text-[3vw] xl:text-[1.2vw] font-bold">Real-time collaboration</h2>
+          <p class="text-center pt-[1vh]">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+        </div>
 
-      <div class="feature flex flex-col items-center">
-        <img src="images/icon-collaboration.svg" alt="Collaboration icon">
-        <h2 class="text-center pt-[2.6vh] text-[4.3vw] font-bold">Real-time collaboration</h2>
-        <p class="text-center pt-[1vh]">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-      </div>
-
-      <div class="feature flex flex-col items-center">
-        <img src="images/icon-any-file.svg" alt="Any file icon">
-        <h2 class="text-center pt-[2.6vh] text-[4.3vw] font-bold">Store any type of file</h2>
-        <p class="text-center pt-[1vh]">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
-      </div>
-    </section>
-
-    <section class="how-it-works pt-[12vh] flex flex-col items-center gap-[4vh] px-[6vw]">
-       <div class="how-it-works-image w-[80.8vw]">
-        <img src="images/illustration-stay-productive.png" alt="Stay productive illustration">
-      </div>
-
-      <div class="how-it-works-text flex flex-col gap-[2vh] px-[2.6vw]">
-        <h2 class="text-[4.3vw] font-bold">Stay productive, wherever you are</h2>
-        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
-        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-        <div class="btn flex items-center gap-[1vw] cursor-pointer border-b border-b-[#65e2d9] w-max">
-          <p class="text-[#65e2d9]">See how Fylo works</p>
-          <img src="images/icon-arrow.svg" alt="Arrow icon">
+        <div class="feature flex flex-col items-center xl:flex-1/2">
+          <img src="images/icon-any-file.svg" alt="Any file icon">
+          <h2 class="text-center pt-[2.6vh] text-[4.3vw] lg:text-[3vw] xl:text-[1.2vw] font-bold">Store any type of file</h2>
+          <p class="text-center pt-[1vh]">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
         </div>
       </div>
     </section>
 
-    <section class="testimonial pt-[12vh] px-[6vw]">
-      <img class="ml-[2vw] w-[8vw]" src="images/bg-quotes.png" alt="Quotes background">
-      <div class="flex flex-col items-center gap-[2.5vh] text-[3vw] mx-[]">
-        <div class="testimonial-card bg-[#1c2633] shadow-md shadow-cyan-500/15 rounded-lg px-[5vw] py-[3vh]">
-        <p>Fylo has improved our team productivity by an order of magnitude.
+    <section class="how-it-works pt-[12vh] xl:pt-[10vh] flex flex-col xl:flex-row items-center gap-[4vh] xl:gap-[4vw] px-[6vw] xl:px-[10.2vw]">
+       <div class="how-it-works-image  w-[80.8vw] lg:w-[75vw] xl:w-[68vw]">
+        <img src="images/illustration-stay-productive.png" alt="Stay productive illustration">
+      </div>
+
+      <div class="how-it-works-text  flex flex-col gap-[2vh] px-[2.6vw] xl:px-0">
+        <h2 class="text-[4.3vw] xl:text-[2.8vw] font-bold">Stay productive, wherever you are</h2>
+        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+        <div class="btn flex items-center gap-[0.5vw] cursor-pointer border-b border-b-[#65e2d9] hover:border-b-[#ffffff] w-max">
+          <p class="text-[#65e2d9] hover:text-[#ffffff]">See how Fylo works</p>
+          <div class="flex items-center justify-center w-3 h-3 rounded-full animate-bounce opacity-75 bg-[#30D5C8] ">
+            <div class="flex items-center justify-center w-3 h-3 rounded-full bg-[#30D5C8] hover:bg-[#ffffff]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2" viewBox="0 0 24 24">
+                <g stroke="black" stroke-width="2" stroke-linecap="round">
+                  <line x1="6" y1="12" x2="18" y2="12" />
+                  <line x1="12" y1="6" x2="18" y2="12" />
+                  <line x1="12" y1="18" x2="18" y2="12" />
+                </g>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="testimonial pt-[12vh] xl:pt-[10vh] px-[6vw] lg:px-[8vw] xl:px-[10vw]">
+      <img class="ml-[2vw] xl:ml-0 w-[8vw] xl:w-[4vw] animate-pulse" src="images/bg-quotes.png" alt="Quotes background">
+      <div class="flex flex-col xl:flex-row items-center gap-[2.5vh] lg:gap-[5.5vh] xl:gap-[2.8vw] text-[3vw] xl:text-[1vw] mx-[]">
+        
+        <div class="testimonial-card bg-[#1c2633] shadow-md shadow-cyan-500/15 rounded-lg px-[5vw] xl:px-[1.7vw] py-[3vh] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-[#65e2d9] hover:text-[#1c2633]">
+        <p>"Fylo has improved our team productivity by an order of magnitude.
           Since making the switch our team has become a well-oiled collaboration 
-          machine.
+          machine."
         </p>
-       
-        <div class="user-info flex items-center gap-[2.6vw] pt-[3vh]">
-          <img class="w-[8vw] rounded-full" src="images/profile-1.jpg" alt="Satish Patel">
+
+        <div class="user-info flex items-center gap-[2.6vw] xl:gap-[1vw] pt-[3vh]">
+          <img class="w-[8vw] xl:w-[2vw] rounded-full" src="images/profile-1.jpg" alt="Satish Patel">
           
           <div>
             <h3 class="font-bold">Satish Patel</h3>
-            <p class="text-[2.5vw]">Founder & CEO, Huddle</p>
+            <p class="text-[2.5vw] xl:text-[0.7vw]">Founder & CEO, Huddle</p>
           </div> 
         </div>
         </div>
 
-        <div class="testimonial-card bg-[#1c2633] shadow-md shadow-cyan-500/15 rounded-lg px-[5vw] py-[3vh]">
+        <div class="testimonial-card bg-[#1c2633] shadow-md shadow-cyan-500/15 rounded-lg px-[5vw] xl:px-[1.7vw] py-[3vh] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-[#65e2d9] hover:text-[#1c2633]">
         <p>"Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."</p>
           
-        <div class="user-info flex items-center gap-[2.6vw] pt-[3vh]">
-          <img class="w-[8vw] rounded-full" src="images/profile-2.jpg" alt="Bruce McKenzie">
+        <div class="user-info flex items-center gap-[2.6vw] xl:gap-[1vw] pt-[3vh]">
+          <img class="w-[8vw] xl:w-[2vw] rounded-full" src="images/profile-2.jpg" alt="Bruce McKenzie">
             
           <div>
             <h3 class="font-bold">Bruce McKenzie</h3>
-            <p class="text-[2.5vw]">Founder & CEO, Huddle</p>
+            <p class="text-[2.5vw] xl:text-[0.7vw]">Founder & CEO, Huddle</p>
           </div>
         </div>
         </div>
 
-        <div class="testimonial-card bg-[#1c2633] shadow-md shadow-cyan-500/15 rounded-lg px-[5vw] py-[3vh]">
+        <div class="testimonial-card bg-[#1c2633] shadow-md shadow-cyan-500/15 rounded-lg px-[5vw] xl:px-[1.7vw] py-[3vh] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-[#65e2d9] hover:text-[#1c2633]">
         <p>"Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."</p>
           
-        <div class="user-info flex items-center gap-[2.6vw] pt-[3vh]">
-          <img class="w-[8vw] rounded-full" src="images/profile-3.jpg" alt="Iva Boyd">
+        <div class="user-info flex items-center gap-[2.6vw] xl:gap-[1vw] pt-[3vh]">
+          <img class="w-[8vw] xl:w-[2vw] rounded-full" src="images/profile-3.jpg" alt="Iva Boyd">
             
           <div>
             <h3 class="font-bold">Iva Boyd</h3>
-            <p class="text-[2.5vw]">Founder & CEO, Huddle</p>
+            <p class="text-[2.5vw] xl:text-[0.7vw]">Founder & CEO, Huddle</p>
           </div>
         </div>
         </div>
@@ -135,46 +154,47 @@
     </section>
   </main>
 
-  <footer class="relative mt-[30vh]">
-    <section class="absolute top-[-20vh] get-started shadow-md shadow-black/30 mx-[6vw] flex flex-col items-center gap-[2vh] bg-[#1c2633] px-[7vw] py-[3vh] rounded-lg z-1">
-      <h2 class="text-[4.3vw] font-bold">Get early access today</h2>
+  <footer class="relative isolate w-full h-auto mt-[30vh] xl:mt-[35vh]">
+    <div class="relative">
+    <section class="early-access absolute z-20 top-[-20vh] xl:top-[-17vh] get-started shadow-md shadow-black/30 mx-[6vw] lg:mx-[8vw] xl:mx-[20vw] flex flex-col items-center gap-[2vh] lg:gap-[3vh] xl:gap-[3.5vh] bg-[#1c2633] px-[7vw]  py-[3vh] rounded-lg">
+      <h2 class="text-[4.3vw] xl:text-[2.8vw] font-bold">Get early access today</h2>
       <p class="text-center">It only takes a minute to sign up and our free starter tier is extremely generous. 
       If you have any questions, our support team would be happy to help you.
       </p>
-      <form id="early-access" class="flex flex-col w-[100%] gap-[2vh] justify-center">
-      <div class="">
-        <input type="email" id="email"  class="bg-white text-black w-full py-[1.4vh] pl-[7vw] mb-2 rounded-full" placeholder="email@example.com" />
+      <form id="early-access" class="flex flex-col xl:flex-row w-[100%] gap-[2vh] justify-center">
+      <div class="xl:flex-2/3">
+        <input type="email" id="email"  class="bg-white text-black w-full py-[1.4vh] pl-[7vw] xl:pl-[2vw] mb-2 xl:mb-0 rounded-full" placeholder="email@example.com" />
         <span id="email-error" class="text-red-500 text-sm ml-6 hidden">Please enter a valid email address</span>
       </div>
-      <button type="submit" class="text-white w-full text-center font-[Raleway] font-medium bg-linear-to-r from-[#65e2d9] to-[#339ecc] py-[1.4vh] rounded-full ">Get Started For Free</button>
+      <button type="submit" class="text-white w-full xl:flex-1/3 text-center font-[Raleway] font-medium bg-linear-to-r from-[#65e2d9] to-[#339ecc] hover:to-[#65e2d9] py-[1.4vh] rounded-full transition delay-120 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">Get Started For Free</button>
       </form>
     </section>
 
-    <section class="absolute bg-[#0b1523] pt-[25vh] px-[7vw] pb-[6vh] flex flex-col gap-[3vh] z-0">
+    <section class="contact absolute z-10 w-full bg-[#0b1523] pt-[25vh] md:pt-[45vh] lg:pt-[20vh] xl:pt-[30vh] px-[7vw] xl:px-[10vw] pb-[6vh] flex flex-col xl:flex-row gap-[3vh] xl:gap-[8vw]">
       <div class="footer-logo-adress flex flex-col gap-[5vh]">
-      <img class="w-[48vw]" src="images/logo.svg" alt="Fylo logo">
-      <div class="footer-address flex gap-[7vw] pr-[3vw]">
-        <img class="w-[5.5vw] h-[3.45vh]" src="images/icon-location.svg" alt="Location icon">
-        <p class="w-[73.6vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      <img class="w-[48vw] xl:w-[15vw]" src="images/logo.svg" alt="Fylo logo">
+      <div class="footer-address flex gap-[7vw] xl:gap-[1vw] pr-[3vw] xl:pr-0">
+        <img class="w-[5.5vw] h-[3.45vh] xl:w-auto" src="images/icon-location.svg" alt="Location icon">
+        <p class="w-[73.6vw] xl:w-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
           sed do eiusmod tempor incididunt ut labore et 
           dolore magna aliqua
         </p>
       </div>
       </div>
 
-      <div class="footer-contact  flex flex-col gap-[3vh]">
-      <div class="footer-email flex gap-[7vw] pr-[3vw]">
-      <img class="w-[5.5vw] h-[2vh]" src="images/icon-email.svg" alt="Email icon">
+      <div class="footer-contact   flex flex-col gap-[3vh]">
+      <div class="footer-email flex gap-[7vw] xl:gap-[1vw] pr-[3vw]">
+      <img class="w-[5.5vw] h-[2vh] xl:w-auto" src="images/icon-email.svg" alt="Email icon">
       <p>example@fylo.com</p>
       </div>
 
-      <div class="footer-phone flex gap-[7vw] pr-[3vw]">
+      <div class="footer-phone  flex gap-[7vw] xl:gap-[1vw] pr-[3vw]">
       <img class="h-[2vh]" src="images/icon-phone.svg" alt="Phone icon">  
       <p>+1-543-123-4567</p>
       </div>
       </div>
 
-      <div class="footer-links mt-[6vh] flex gap-[6vh]">
+      <div class="footer-links  mt-[6vh] xl:mt-0 flex gap-[8vh]">
       <ul class="flex flex-col gap-[1vh]">
         <li><a href="#">About Us</a></li>
         <li><a href="#">Jobs</a></li>
@@ -189,65 +209,40 @@
       </ul>
       </div>
 
-      <div class="flex pt-[3vh] items-center justify-center gap-[2vw]">
+      <div class="flex  pt-[3vh] xl:pt-0 items-start justify-start gap-[2vw] xl:gap-[1vw]">
       <!-- Facebook Icon -->
-      <a href="#" class="text-white rounded-full border p-2 transition duration-300">
+      <a href="#" class="text-white hover:text-[#65e2d9] rounded-full border p-2 transition duration-300">
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
           <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z"/>
         </svg>
       </a>
 
       <!-- Twitter Icon -->
-      <a href="#" class="text-white rounded-full border p-2 transition duration-300">
+      <a href="#" class="text-white rounded-full hover:text-[#65e2d9] border p-2 transition duration-300">
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
           <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.3 3.9A12.14 12.14 0 0 1 3.15 4.6a4.28 4.28 0 0 0 1.32 5.7 4.2 4.2 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.43 4.2 4.3 4.3 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.97A8.6 8.6 0 0 1 2 19.54a12.1 12.1 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.38-.01-.57A8.7 8.7 0 0 0 24 5.5a8.6 8.6 0 0 1-2.54.7z"/>
         </svg>
       </a>
 
       <!-- Instagram Icon -->
-      <a href="#" class="text-white rounded-full border p-2 transition duration-300">
+      <a href="#" class="text-white hover:text-[#65e2d9] rounded-full border p-2 transition duration-300">
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
           <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
         </svg>
       </a>
       </div>
     </section>
+    </div>
   </footer>
+</div>
+</div>
 
-  <script>
-    const form = document.getElementById('early-access');
-    const emailInput = document.getElementById('email');
-    const errorMsg = document.getElementById('email-error');
-
-    form.addEventListener('submit', function(e) {
-    e.preventDefault();
-      const email = emailInput.value.trim();
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-      if (!email) {
-        errorMsg.textContent = "Email field cannot be empty";
-        errorMsg.classList.remove('hidden');
-        emailInput.classList.add('border', 'border-red-500');
-      } 
-      else if (!emailPattern.test(email)) {
-        errorMsg.textContent = "Please enter a valid email address";
-        errorMsg.classList.remove('hidden');
-        emailInput.classList.add('border', 'border-red-500');
-      } 
-      else {
-        errorMsg.classList.add('hidden');
-        emailInput.classList.remove('border', 'border-red-500');
-        // You can handle successful submission here
-        alert("Thank you for signing up!");
-        form.reset();
-      }
-    });
-
-    emailInput.addEventListener('input', function() {
-      errorMsg.classList.add('hidden');
-      emailInput.classList.remove('border', 'border-red-500');
-    });
-  </script>
+  <!-- GSAP CDN Links -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <!-- ScrollSmoother requires ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+  <script src="functions.js"></script>
 </body>
 
 </html>

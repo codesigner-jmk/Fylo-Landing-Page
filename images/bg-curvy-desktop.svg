@@ -1,1 +1,21 @@
-<svg width="1440" height="449" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M0 0h1454v449H0z"/></defs><g transform="translate(-14)" fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M14 413.954c90.836-5.359 176.206-50.375 256.111-135.046C389.968 151.9 364.01 105.164 563.005 148.686 762 192.207 745.05 163.699 873 63.13c127.95-100.57 211-77.554 289 44.667 78 122.222 151 162.895 284 207.778 88.667 29.921 92.03 848.285 10.091 2455.09H14V413.956z" fill="#181F2B" mask="url(#b)"/></g></svg>
+<svg width="1440" height="500" viewBox="0 0 1440 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_67_3)">
+<g clip-path="url(#clip1_67_3)">
+<mask id="mask0_67_3" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-14" y="0" width="1454" height="449">
+<path d="M-14 0H1440V449H-14V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_67_3)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 413.954C90.836 408.595 176.206 363.579 256.111 278.908C375.968 151.9 350.01 105.164 549.005 148.686C748 192.207 731.05 163.699 859 63.13C986.95 -37.44 1070 -14.424 1148 107.797C1226 230.019 1299 270.692 1432 315.575C1520.67 345.496 1524.03 1163.86 1442.09 2770.67H0V413.956V413.954Z" fill="#181F2B"/>
+</g>
+</g>
+<rect y="449" width="1440" height="51" fill="#181F2B"/>
+</g>
+<defs>
+<clipPath id="clip0_67_3">
+<rect width="1440" height="500" fill="white"/>
+</clipPath>
+<clipPath id="clip1_67_3">
+<rect width="1440" height="449" fill="white"/>
+</clipPath>
+</defs>
+</svg>
