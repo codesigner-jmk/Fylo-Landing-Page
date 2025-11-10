@@ -75,7 +75,7 @@ gsap.from(".testimonial", {
     },
 });
 
-gsap.from("footer", {
+/* gsap.from("footer", {
      y: "10vh",
     ease: "power4.inout",
     duration: 1.2,
@@ -84,7 +84,7 @@ gsap.from("footer", {
         trigger: "footer",
         start: "top 85%",
     },
-});
+}); */
 
 
 const form = document.getElementById('early-access');
