@@ -482,6 +482,9 @@
     --tw-gradient-from: #65e2d9;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .from-11\% {
+    --tw-gradient-from-position: 11%;
+  }
   .from-14\% {
     --tw-gradient-from-position: 14%;
   }
@@ -492,6 +495,9 @@
   .to-\[\#339ecc\] {
     --tw-gradient-to: #339ecc;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-11\% {
+    --tw-gradient-to-position: 11%;
   }
   .to-14\% {
     --tw-gradient-to-position: 14%;
