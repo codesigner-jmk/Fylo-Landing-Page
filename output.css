@@ -413,6 +413,9 @@
   .gap-\[10vh\] {
     gap: 10vh;
   }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -1081,6 +1084,16 @@
       --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
     }
   }
+  .xl\:from-30\% {
+    @media (width >= 80rem) {
+      --tw-gradient-from-position: 30%;
+    }
+  }
+  .xl\:from-31\% {
+    @media (width >= 80rem) {
+      --tw-gradient-from-position: 31%;
+    }
+  }
   .xl\:from-34\% {
     @media (width >= 80rem) {
       --tw-gradient-from-position: 34%;
@@ -1090,6 +1103,16 @@
     @media (width >= 80rem) {
       --tw-gradient-to: #181f2a;
       --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+  }
+  .xl\:to-30\% {
+    @media (width >= 80rem) {
+      --tw-gradient-to-position: 30%;
+    }
+  }
+  .xl\:to-31\% {
+    @media (width >= 80rem) {
+      --tw-gradient-to-position: 31%;
     }
   }
   .xl\:to-34\% {
